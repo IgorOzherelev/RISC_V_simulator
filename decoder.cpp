@@ -5,7 +5,7 @@
 #include "decoder.h"
 
 void Instruction::decode(uint32_t raw_instr) {
-    oppcode = 0b1111111 & raw_instr;
+    oppcode = 0b1111111 &  raw_instr;
 
     if ((0b0010100 & oppcode) == 0b0010100)
     {
